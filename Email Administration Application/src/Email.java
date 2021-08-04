@@ -28,7 +28,8 @@ public class Email
         //Call a method asking for the department - return the department
         department = setDepartment();
          
-        if(department != null) {
+        if(department != null) 
+        {
             System.out.println("You chose " + department);
         }
         else
