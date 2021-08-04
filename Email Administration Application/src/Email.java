@@ -27,7 +27,14 @@ public class Email
 
         //Call a method asking for the department - return the department
         department = setDepartment();
-        System.out.println("You chose " + department);
+         
+        if(department != null) {
+            System.out.println("You chose " + department);
+        }
+        else
+        {
+            System.out.println("---"); // no value was entered
+        }
 
         //Combine elements to generate email
         email = firstName.toLowerCase() + "." +  lastName.toLowerCase() + "@" + department + "." + companySuffix;
